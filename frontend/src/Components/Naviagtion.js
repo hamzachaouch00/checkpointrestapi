@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import AddArticle from './AddArticle';
+import { Link } from 'react-router-dom';
 
 const Naviagtion = ({setSearch}) => {
   return (
@@ -21,6 +22,7 @@ const Naviagtion = ({setSearch}) => {
           navbarScroll
         >
           <Nav.Link >Home</Nav.Link>
+          <Nav.Link to ='/payment' as={Link} >payment</Nav.Link>
          
           <NavDropdown title="Link" id="navbarScrollingDropdown">
             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
